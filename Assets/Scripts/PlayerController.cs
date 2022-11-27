@@ -6,15 +6,21 @@ public class PlayerController : MonoBehaviour
 {
     private Transform player; //Take the transform of the player
     public float speed; //Sets the speed of the player
-    public float maxBound, minBound; //sets the limits of the player
-    private float h; 
+    public float maxBound, minBound; //Sets the limits of the player
+    private float h;
+    
+    public GameObject shot; //Take the bullet gameObject
+    public Transform shotSpawn;//Take the position where the bullet will spawn
+    public float fireRate;//Time to wait for the next shot
 
+    private float nextfire;//Colddown of the shotted bullet
+   
     void Start()
     {
         player = GetComponent<Transform>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         h = Input.GetAxis("Horizontal"); //Controllers for the buttons (A,D/<-,->)
 
@@ -24,4 +30,14 @@ public class PlayerController : MonoBehaviour
             h = 0;
         player.position += Vector3.right * h * speed; //Movment of the player
     }
+
+    private void Update()
+    {
+        if(Input.GetButton("Fire1") && Time.time > nextfire)//Function to shot
+        {
+            nextfire = Time.time + fireRate;//Starts the colddown
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);//spawn a bullet
+        }
+    }
+
 }

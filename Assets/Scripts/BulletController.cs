@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     private Transform bullet;
-    public float speed; 
+    public float speed;
 
     void Start()
     {
@@ -21,9 +21,19 @@ public class BulletController : MonoBehaviour
 
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
+    private void OnTriggerEnter2D(Collider2D other)
+    { if(other.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+            PlayerScore.playerScore += 10;
+        }
+    else if(other.tag == "Base")
+        {
+            Destroy(gameObject);
+
+        }
         
-    }*/
+    }
 
 }
