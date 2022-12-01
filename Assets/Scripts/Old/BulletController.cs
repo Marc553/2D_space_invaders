@@ -22,7 +22,7 @@ public class BulletController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    { if(other.tag == "Enemy")
+    { if(other.tag == "Enemy_egg" )
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
@@ -33,7 +33,8 @@ public class BulletController : MonoBehaviour
             Destroy(gameObject);
 
         }
-        
+    
+
     }
 
 }

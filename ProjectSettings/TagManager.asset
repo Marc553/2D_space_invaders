@@ -6,7 +6,9 @@ TagManager:
   tags:
   - Bullet
   - Base
-  - Enemy
+  - Enemy_egg
+  - Enemy_milk
+  - Enemy_flour
   layers:
   - Default
   - TransparentFX

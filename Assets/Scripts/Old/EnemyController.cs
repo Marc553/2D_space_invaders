@@ -7,14 +7,15 @@ public class EnemyController : MonoBehaviour
 {
     private Transform enemyHolder;
     public float speed;
+    private GameObject[] enemyLeft;
 
     public GameObject shot;
-    public TextMeshProUGUI winText;
+    public GameObject winText;
     public float fireRate = 0.997f;
 
     void Start()
     {
-        winText.enabled = false;
+        winText.SetActive(false);
         InvokeRepeating ("MoveEnemy", 0.1f, 0.3f);
         enemyHolder = GetComponent<Transform>();
     }
@@ -49,10 +50,13 @@ public class EnemyController : MonoBehaviour
             CancelInvoke();
             InvokeRepeating("MoveEnemy", 0.1f, 0.25f);
         }
-        if(enemyHolder.childCount == 0)
+
+        enemyLeft = GameObject.FindGameObjectsWithTag("enemy_egg");
+        if(enemyLeft == null)
         {
-            winText.enabled = true;
+            Debug.Log("va");
         }
+
     }
     
 }

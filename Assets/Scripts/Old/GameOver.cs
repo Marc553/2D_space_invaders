@@ -7,12 +7,11 @@ using TMPro;
 public class GameOver : MonoBehaviour
 {
     public static bool isPlayerDead = false;//Checks if the player is dead
-    private TextMeshProUGUI gameOver;
+    public GameObject gameOver;
 
     void Start()
     {
-        gameOver = GetComponent<TextMeshProUGUI>();
-        gameOver.enabled = false;
+        gameOver.SetActive(false);
         
     }
 
@@ -21,8 +20,7 @@ public class GameOver : MonoBehaviour
         if (isPlayerDead)
         {
             Time.timeScale = 0;
-            gameOver.enabled = true;
-
+            gameOver.SetActive(true);
         }
         
     }

@@ -14,7 +14,7 @@ public class EnemyBulletController : MonoBehaviour
 
     void FixedUpdate()
     {
-        bullet.position += Vector3.up * speed;
+        bullet.position += Vector3.down * speed;
 
         if(bullet.position.y <= -10)
         {
