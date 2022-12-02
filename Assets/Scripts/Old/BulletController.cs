@@ -33,7 +33,19 @@ public class BulletController : MonoBehaviour
             Destroy(gameObject);
 
         }
-    
+    else if (other.tag == "Enemy_milk")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+            PlayerScore.playerScore += 30;
+        }
+    else if (other.tag == "Enemy_flour")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+            PlayerScore.playerScore += 20;
+        }
+
 
     }
 

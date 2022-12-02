@@ -51,11 +51,15 @@ public class EnemyController : MonoBehaviour
             InvokeRepeating("MoveEnemy", 0.1f, 0.25f);
         }
 
-        enemyLeft = GameObject.FindGameObjectsWithTag("enemy_egg");
+        if(enemyHolder.childCount == 0)
+        {
+            winText.SetActive(true);
+        }
+        /*enemyLeft = GameObject.FindGameObjectsWithTag("enemy_egg");
         if(enemyLeft == null)
         {
             Debug.Log("va");
-        }
+        }*/
 
     }
     
