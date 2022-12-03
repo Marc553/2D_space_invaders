@@ -9,6 +9,7 @@ TagManager:
   - Enemy_egg
   - Enemy_milk
   - Enemy_flour
+  - Enemy
   layers:
   - Default
   - TransparentFX
