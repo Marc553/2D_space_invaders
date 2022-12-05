@@ -8,9 +8,6 @@ public class EnemyController : MonoBehaviour
 {
     private Transform enemyHolder;//EnemyHolder transform
     public float speed;//EnemyHolder speed
-    public float fireRate = 0.997f;//Fire rate of the enemy bullet
-    public GameObject shot;//EnemyBullet 
-    
     public GameManager gameManager;//Game Manager script
     
     void Start()
@@ -33,11 +30,7 @@ public class EnemyController : MonoBehaviour
                 return; //End the foreach
             }
 
-            if(Random.value > fireRate)//If the random value(0.0-1)  passes fireRate it shots
-            {
-                Instantiate(shot, enemy.position, enemy.rotation);//Instantiate the enemy bullet at the enemy position with the enemy rotation
-            }
-
+            
             if(enemy.position.y <= -4)//If the enemy position is further than -4y
             {
                 gameManager.GameOver();//Ends the game
@@ -55,4 +48,5 @@ public class EnemyController : MonoBehaviour
             gameManager.Win();//Shows the win 
         }
     }
+
 }

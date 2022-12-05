@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 43
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 23
+  controlID: 44
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 109
+  controlID: 45
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Matirials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Matirials
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\marcr\OneDrive\Escritorio\Actividades Unity\Segundo\2D_space_invaders
+  m_LastProjectPath: D:\Marc_Ramis_Diez\Elementos_unity\2D_space_invaders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 586e0000
-    m_LastClickedID: 28248
-    m_ExpandedIDs: 00000000146e0000166e00001c6e000000ca9a3bffffff7f
+    m_SelectedIDs: 6a6e0000
+    m_LastClickedID: 28266
+    m_ExpandedIDs: 000000004e6e0000726e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000146e0000166e0000
+    m_ExpandedIDs: 000000004e6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 6a6e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: d2d1feffd6d2feffc2d8feffe2d9feffe4dffeffc4e1feffdce4feff90e7feff50eafeff7414ffff5415ffff5444ffffca57ffffa05effffa25fffffec64ffff4c66ffff706dffff7a6dffff226effffbc70ffffb271ffff2273ffff4c75fffff278ffffc27affff7e7bffff0688fffffa88ffffea90ffff1292ffff92b9ffff88baffff72bcffff9abeffffb8c5ffff76c6ffff2afbfffff4ffffffcc6b0000186c00007e930000f69400001897000062970000a4980000aa9b0000dc9b0000fe9b0000549d0000669e0000ba9e0000c29e00002a9f00007e9f0000869f000034a7000032aa00000cae0000c4b500006ab60000
+      m_ExpandedIDs: 1849ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1001.08905, y: 548.09955, z: -4.114134}
+    m_Target: {x: 0.68301326, y: 0.21317741, z: -0.09371334}
     speed: 2
-    m_Value: {x: 1001.08905, y: 548.09955, z: -4.114134}
+    m_Value: {x: 0.7199312, y: 0.13241953, z: -0.090748385}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -814,9 +814,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 638.2165
+    m_Target: 5.46941
     speed: 2
-    m_Value: 638.2165
+    m_Value: 5.727131
   m_Ortho:
     m_Target: 1
     speed: 2

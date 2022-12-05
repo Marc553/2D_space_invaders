@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         winText.SetActive(false);//Set off the win
         ApplyUserOptions();
         Debug.Log(characterSkin);
+        Time.timeScale = 1;
     }
 
     void Update()
