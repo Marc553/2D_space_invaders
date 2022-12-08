@@ -10,11 +10,15 @@ public class CustomManager : MonoBehaviour
 {
     public int skinName;//The variabel that save the choosed skin
     public GameObject[] skins;//Array wiht the skins
+    public AudioSource audioManager;
+    public AudioClip music;
 
     private void Start()
     {
         LoadUserOptions();
         SaveUserOptions();
+        audioManager = GetComponent<AudioSource>();
+        audioManager.PlayOneShot(music);
     }
 
     public void SaveUserOptions()

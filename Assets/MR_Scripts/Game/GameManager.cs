@@ -18,7 +18,10 @@ public class GameManager : MonoBehaviour
 
     #region WIN varaibles
     public GameObject winText;//Shows that the player win 
-    #endregion 
+    #endregion
+
+    public AudioSource audioManager;
+    public AudioClip music;
 
     public int characterSkin = 1;//SAve the value of choosed skin 
 
@@ -28,6 +31,11 @@ public class GameManager : MonoBehaviour
         gameOver.SetActive(false);//Set off the game over
         winText.SetActive(false);//Set off the win
         Time.timeScale = 1;
+    }
+    private void Start()
+    {
+        audioManager = GetComponent<AudioSource>();
+        audioManager.PlayOneShot(music);
     }
 
     public void ApplyUserOptions()

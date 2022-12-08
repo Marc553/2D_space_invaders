@@ -16,10 +16,14 @@ public class PlayerController : MonoBehaviour
     public float fireRate;//Time to wait for the next shot
     private float nextfire;//Colddown of the shotted bullet
 
+    private AudioSource audioSource;
+    public AudioClip auisoShot;
+
     public GameManager gameManager;//Game Manager script
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         player = GetComponent<Transform>();//Take the player transform
         gameManager = FindObjectOfType<GameManager>();//Take the Game Manager script 
         s = gameManager.characterSkin;//Save the choosed skin 
@@ -45,6 +49,7 @@ public class PlayerController : MonoBehaviour
         {
             nextfire = Time.time + fireRate;//Starts the colddown
             Instantiate(shot[s], shotSpawn.position, shotSpawn.rotation);//spawn a bullet
+            audioSource.PlayOneShot(auisoShot);
         }
     }
 
